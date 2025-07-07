@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome H's blog</title>
+<!-- Tailwind CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- 구글 폰트 Pretendard (대체 폰트) -->
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+        font-family: 'Noto Sans KR', sans-serif;
+        }
+    </style>
+    </head>
+    <body class="text-gray-800">
+    <!-- 🌐 NAVIGATION BAR -->
+        <header class="absolute top-0 left-0 w-full z-20 bg-transparent py-4">
+            <div class="max-w-6xl mx-auto flex items-center justify-between px-6">
+            <h1 class="text-white text-xl font-bold">H's Blog</h1>
+            <nav class="space-x-6 hidden md:flex">
+                <a href="#about" class="text-white hover:underline">About</a>
+                <a href="#skills" class="text-white hover:underline">Skills</a>
+                <a href="#projects" class="text-white hover:underline">Projects</a>
+                <a href="#contact" class="text-white hover:underline">Contact</a>
+            </nav>
+            </div>
+        </header>
+
+    <!-- 🎬 HERO 영역 -->
+    <section class="relative w-full h-screen overflow-hidden">
+        <!-- 비디오 배경 -->
+        <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover -z-10">
+        <source src="main.mp4" type="video/mp4" />
+        </video>
+        <!-- 오버레이 텍스트 -->
+        <div class="relative z-10 flex flex-col items-center justify-center h-full px-4">
+        <h2 class="text-white text-5xl md:text-6xl font-bold drop-shadow-lg mb-6 animate-fade-in">Welcome H's Blog</h2>
+        <a href="#about" class="mt-4 inline-block px-6 py-3 bg-white/80 text-green-700 font-semibold rounded-full shadow hover:bg-white transition">
+            더 알아보기</a>
+        </div>
+    </section>
+
+    <!-- 🧍‍♂️ About Me -->
+    <section id="about" class="bg-white py-20">
+        <div class="max-w-4xl mx-auto text-center px-4">
+        <h2 class="text-3xl font-bold text-green-600 mb-4">About Me</h2>
+        <p class="text-lg">일상생활에 문제들로부터 비즈니스 아이디어를 쌓아왔고,
+            <br>우리의 자산을 위협하는 "전세사기의 두려움"을 해결하고자 창업을 준비중입니다.</p>
+        </div>
+    </section>
+
+    <!-- 🛠️ Skills -->
+    <section id="skills" class="bg-green-50 py-20">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-green-600 text-center mb-8">Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                <p class="text-lg font-semibold">HTML</p>
+                </div>
+                <div>
+                <p class="text-lg font-semibold">CSS/Tailwind</p>
+                </div>
+                <div>
+                <p class="text-lg font-semibold">JavaScript</p>
+                </div>
+                <div>
+                <p class="text-lg font-semibold">Python</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- 📁 Projects -->
+    <section id="projects" class="bg-white py-20">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-green-600 text-center mb-8">Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+            <a href="https://zipterview.vercel.app" target="_blank" class="block border rounded-xl p-6 shadow hover:shadow-lg transition hover:scale-[1.02]">
+                <h3 class="text-xl font-bold mb-2">집터뷰</h3>
+                <p>전세 사기 예방을 위한 계약 분석 웹 서비스</p>
+            </a>
+            <a href="https://taewoong-hong.github.io/myblog/" target="_blank" class="block border rounded-xl p-6 shadow hover:shadow-lg transition hover:scale-[1.02]">
+                <h3 class="text-xl font-bold mb-2">개인 블로그 구축</h3>
+                <p>Tailwind 기반 정적 블로그 템플릿 구현</p>
+            </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✉️ Contact -->
+    <section id="contact" class="bg-green-50 py-20">
+        <div class="max-w-xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-green-600 mb-4">Contact</h2>
+            <br>
+            <div class="space-x-4">
+                <a href="mailto:ghdxodnd@email.com" class="inline-block bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700">Email</a>
+                <a href="https://github.com/Taewoong-Hong/" class="inline-block bg-white border border-green-600 text-green-600 px-6 py-2 rounded-full hover:bg-green-100">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🦶 Footer -->
+    <footer class="bg-white border-t py-6 text-center text-sm text-gray-500">
+        &copy; 2025 Taewoong-Hong. All rights reserved.
+    </footer>
+    </body>
+</html>
